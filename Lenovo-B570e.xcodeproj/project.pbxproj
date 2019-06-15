@@ -6,10 +6,23 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		DF36337422B57B450018AED7 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		DF36337522B57B450018AED7 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		DF36337622B57B450018AED7 /* hotpatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = hotpatch; sourceTree = "<group>"; };
+		DF36337822B57B450018AED7 /* SSDT-i5_2140M.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-i5_2140M.aml"; sourceTree = "<group>"; };
+		DF36337922B57D7F0018AED7 /* SSDT-B570e.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-B570e.aml"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		DF36336D22B57B040018AED7 = {
 			isa = PBXGroup;
 			children = (
+				DF36337522B57B450018AED7 /* Audio */,
+				DF36337422B57B450018AED7 /* config.plist */,
+				DF36337622B57B450018AED7 /* hotpatch */,
+				DF36337822B57B450018AED7 /* SSDT-i5_2140M.aml */,
+				DF36337922B57D7F0018AED7 /* SSDT-B570e.aml */,
 			);
 			sourceTree = "<group>";
 		};
