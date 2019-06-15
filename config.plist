@@ -263,7 +263,7 @@
 				<key>#Comment</key>
 				<string>Realtek ALC 272</string>
 				<key>layout-id</key>
-				<data>AgAAAA==</data>
+				<integer>28</integer>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -322,7 +322,7 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
+		<key>#ScreenResolution</key>
 		<string>1366x768</string>
 		<key>Theme</key>
 		<string>Embedded</string>
@@ -356,64 +356,7 @@
 		<key>ForceKextsToLoad</key>
 		<array/>
 		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>AppleHDAWidget Assertion Patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>U291bmQgYXNzZXJ0aW9uIA==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>AAAAAAAAAAAAAAAAAAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Zeroing 1983 codec </string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>gxnUEQ==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>AAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Zeroing 885 codec </string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>hQjsEA==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>AAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Patching 1984 with 10ec0272 codec</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>hBnUEQ==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>cgLsEA==</data>
-			</dict>
-		</array>
+		<array/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
