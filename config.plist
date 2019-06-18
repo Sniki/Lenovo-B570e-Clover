@@ -216,7 +216,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 slide=0 nv_disable=1 -cdfon</string>
+		<string>dart=0 slide=0 -cdfon</string>
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -263,7 +263,7 @@
 				<key>#Comment</key>
 				<string>Realtek ALC 272</string>
 				<key>layout-id</key>
-				<integer>28</integer>
+				<integer>18</integer>
 			</dict>
 		</dict>
 		<key>USB</key>
