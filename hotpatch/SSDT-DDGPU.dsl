@@ -11,7 +11,7 @@ DefinitionBlock("", "SSDT", 2, "B570E", "_DDGPU", 0)
         Name(_HID, "RMD10000")
         Method(_INI)
         {
-            // disable discrete graphics (Nvidia) if it is present
+            // disable discrete graphics (Nvidia GT525M) if it is present
             If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
         }
     }

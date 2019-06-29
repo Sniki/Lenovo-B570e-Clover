@@ -40,7 +40,7 @@ DefinitionBlock ("", "SSDT", 2, "B570E", "_KBD", 0)
             {
                 "Breakless PS2", Package()
                 {
-                    Package(){}, //indicating array
+                    Package(){},
                     "e06b", // Fn+F10
                 },
                 "MaximumMacroTime", 25000000,
@@ -54,7 +54,7 @@ DefinitionBlock ("", "SSDT", 2, "B570E", "_KBD", 0)
                 "Custom ADB Map", Package()
                 {
                     Package(){},
-                    "e06b=70", // video mirror
+                    "e06b=70", // Video mirror
                 },
 
                 "Custom PS2 Map", Package()
@@ -64,7 +64,7 @@ DefinitionBlock ("", "SSDT", 2, "B570E", "_KBD", 0)
                     "46=00", // Disable ScrLk
                     "e045=00", // Disable Pause
                     "e046=00", // Disable Break
-                    "e05d=6a", // RightClick (ContextMenu)
+                    "e05d=6a", // RightClick (Context Menu)
                 },
             },
         })

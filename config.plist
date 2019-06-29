@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>This file is for Lenovo B570e/B570 Laptop</string>
+	<string>This file is for Lenovo B570e / B570 Laptop</string>
 	<key>ACPI</key>
 	<dict>
 		<key>AutoMerge</key>
@@ -25,7 +25,7 @@
 				<key>FixIPIC</key>
 				<false/>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixMutex</key>
 				<true/>
 			</dict>
@@ -261,7 +261,7 @@
 			<key>PciRoot(0)/Pci(0x1b,0)</key>
 			<dict>
 				<key>#Comment</key>
-				<string>Realtek ALC 272</string>
+				<string>Realtek ALC 272 Audio Codec</string>
 				<key>layout-id</key>
 				<integer>18</integer>
 			</dict>
