@@ -2,7 +2,6 @@
 DefinitionBlock("", "SSDT", 2, "B570E", "_B570E", 0)
 {
     #define NO_DEFINITIONBLOCK
-    #include "SSDT-XOSI.dsl"
     #include "SSDT-DDGPU.dsl"
     #include "SSDT-KBD.dsl"
     #include "SSDT-USB.dsl"
