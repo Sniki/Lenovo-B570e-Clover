@@ -7,4 +7,3 @@ DefinitionBlock("", "SSDT", 2, "B570E", "_B570E", 0)
     #include "SSDT-USB.dsl"
     #include "SSDT-GPRW.dsl"
 }
-

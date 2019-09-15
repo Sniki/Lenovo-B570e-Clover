@@ -90,4 +90,3 @@ DefinitionBlock ("", "SSDT", 2, "B570E", "_USB", 0)
 #ifndef NO_DEFINITIONBLOCK
 }
 #endif
-//EOF
