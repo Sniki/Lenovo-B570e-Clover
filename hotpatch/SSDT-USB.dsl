@@ -1,10 +1,8 @@
 // Custom USB Port Injector for Lenovo B570e.
 // Note: Uncomment HP16 if you want to enable Card Reader, Disabled since it is not Supported.
 
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "B570E", "_USB", 0)
 {
-#endif
     Device(UIAC)
     {
         Name(_HID, "UIA00000")
@@ -87,6 +85,4 @@ DefinitionBlock ("", "SSDT", 2, "B570E", "_USB", 0)
             },
         })
     }
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif

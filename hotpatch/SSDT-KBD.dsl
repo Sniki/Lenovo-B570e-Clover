@@ -1,33 +1,71 @@
 // Lenovo B570e Keyboard Map
 
-#ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "B570E", "_KBD", 0)
 {
-#endif
-    External (_SB.PCI0.LPCB.EC, DeviceObj)
-    External (_SB.PCI0.LPCB.KBD0, DeviceObj)
+    External(_SB.PCI0.LPCB.EC0, DeviceObj)
+    External(_SB.PCI0.LPCB.KBD0, DeviceObj)
+    External(_SB.PCI0.LPCB.EC0.XQ1D, MethodObj)
+    External(_SB.PCI0.LPCB.EC0.XQ1C, MethodObj)
+    External(_SB.PCI0.LPCB.EC0.XQ77, MethodObj)
+    External(_SB.PCI0.LPCB.EC0.XQ28, MethodObj)
+    External(_SB.PCI0.LPCB.EC0.XQ22, MethodObj)
 
-    Scope (_SB.PCI0.LPCB.EC)
+    Scope (_SB.PCI0.LPCB.EC0)
     {
         Method (_Q1D, 0, NotSerialized) // F14 Brightness Down
         {
-            Notify (KBD0, 0x0405)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD0, 0x0405)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC0.XQ1D ()
+            }
         }
         Method (_Q1C, 0, NotSerialized) // F15 Brightness Up
         {
-            Notify (KBD0, 0x0406)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD0, 0x0406)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC0.XQ1C ()
+            }
         }
         Method (_Q77, 0, NotSerialized) // F16
         {
-            Notify (KBD0, 0x0367)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD0, 0x0367)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC0.XQ77 ()
+            }
         }
         Method (_Q28, 0, NotSerialized) // F17
         {
-            Notify (KBD0, 0x0368)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD0, 0x0368)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC0.XQ28 ()
+            }
         }
         Method (_Q22, 0, NotSerialized) // F18
         {
-            Notify (KBD0, 0x0369)
+            If (_OSI ("Darwin"))
+            {
+                Notify (KBD0, 0x0369)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC0.XQ22 ()
+            }
         }         
     }
     
@@ -69,6 +107,4 @@ DefinitionBlock ("", "SSDT", 2, "B570E", "_KBD", 0)
             },
         })
     } 
-#ifndef NO_DEFINITIONBLOCK
 }
-#endif
